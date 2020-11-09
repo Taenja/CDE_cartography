@@ -1,0 +1,53 @@
+var dorm = 
+
+  {"type":"FeatureCollection",
+  "features":[
+      {"type":"Feature",
+      "properties":
+      {"S_no":1,
+      "Name":"International College",
+      "image": "image/International Kolleg.jpg"
+      "HouseNumber":10,"Street":"Billrothstrasse, 5020 Salzburg, Austria","Room Type":"Single room , Single room in shared flat with 2/3 people, double share room","Rent/Month":"250 - 365","Distance from University of Salzburg ":"4 Km","Distance from Techno Z ":"7 Km"},
+      "geometry":{"type":"Point","coordinates":[13.071756362915039, 47.77914861037154]}},
+      {"type":"Feature",
+      "properties":{"S_no":2,"Name":"Katharina Von Bora","HouseNumber":10,"Street":"Dr. Altmannstrasse, 5020 Salzburg, Austria","Room Type":"Single room, Double room, triple room","Rent/Month":"250 - 300","Distance from University of Salzburg ":"3.7 Km","Distance from Techno Z ":"6.3 Km"},
+      "geometry":{"type":"Point","coordinates":[13.044934272766113, 47.77896296098424]}},
+      {"type":"Feature","properties":{"S_no":3,"Name":"die WG","HouseNumber":2,"Street":"Saint-Julian-Strasse, 5020 Salzburg, Austria","Room Type":"Single apartmnet, two-room apartment, three-room apartment","Rent/Month":"420 - 490","Distance from University of Salzburg ":"3 Km","Distance from Techno Z ":"1.6 Km"},
+      "geometry":{"type":"Point","coordinates":[13.037860, 47.810770 ]}},
+      {"type":"Feature","properties":{"S_no":4,"Name":"Franz Von Sales Kolleg","HouseNumber":11,"Street":"Robert Preussler Strasse, 5020 Salzburg, Austria ","Room Type":"Single room , Single room in shared flat with 2/3 people, double share room","Rent/Month":"265 - 400","Distance from University of Salzburg ":"4.8 Km","Distance from Techno Z ":"7.5 Km"},
+      "geometry":{"type":"Point","coordinates":[13.073617, 47.771868]}},
+      {"type":"Feature","properties":{"S_no":5,"Name":"Europa Kolleg","HouseNumber":28,"Street":"Robert Preussler Strasse , 5020 Salzburg, Austria","Room Type":"Single room , Single room in shared flat with 2/3 people, double share room","Rent/Month":"290 - 420","Distance from University of Salzburg ":"4.8 Km","Distance from Techno Z ":"7.4 Km"},
+      "geometry":{"type":"Point","coordinates":[13.072627, 47.772834]}},
+      {"type":"Feature","properties":{"S_no":6,"Name":"Haus Paracelsus","HouseNumber":10,"Street":"Konrad Laib Strasse, 5020 Salzburg, Austria","Room Type":"Single room, Single room with balcony, Studio Apartment with balcony","Rent/Month":"300 - 400","Distance from University of Salzburg ":"3 Km","Distance from Techno Z ":"5.6 Km"},
+      "geometry":{"type":"Point","coordinates":[13.061808, 47.787575]}},
+      {"type":"Feature","properties":{"S_no":7,"Name":"KolpingHaus","HouseNumber":10,"Street":"Adolf Kolping Strasse, 5020 Salzburg, Austria","Room Type":"Single room , Double room","Rent/Month":"400 - 550","Distance from University of Salzburg ":"4.2 Km","Distance from Techno Z ":"1.1 Km"},
+      "geometry":{"type":"Point","coordinates":[13.036707, 47.821645]}},
+      {"type":"Feature","properties":{"S_no":8,"Name":"LehrerHaus","HouseNumber":9,"Street":"Hegigasse, 5020 Salzburg, Austria","Room Type":"Single room, double room, Single room in shared apartment with 4 people","Rent/Month":"365 - 380","Distance from University of Salzburg ":"3.8 Km","Distance from Techno Z ":"6.5 Km"},
+      "geometry":{"type":"Point","coordinates":[13.033192, 47.793089]}},
+      {"type":"Feature","properties":{"S_no":9,"Name":"Paris Lodron Studentheim","HouseNumber":36,"Street":"Schallmooser Hauptstrasse, 5020 Salzburg, Austria","Room Type":"Single room large, Single room small, Double sharing room","Rent/Month":"240 - 340","Distance from University of Salzburg ":"3.6 Km","Distance from Techno Z ":"4.6 Km"},
+      "geometry":{"type":"Point","coordinates":[13.056421, 47.806804]}},
+      {"type":"Feature","properties":{"S_no":10,"Name":"Ojab Haus","HouseNumber":1,"Street":"Strubergasse, 5020 Salzburg, Austria","Room Type":"Single room, Double share room","Rent/Month":"250 - 280","Distance from University of Salzburg ":"3.5 Km","Distance from Techno Z ":"2.3 Km"},
+      "geometry":{"type":"Point","coordinates":[13.035222, 47.809187]}},
+      {"type":"Feature","properties":{"S_no":11,"Name":"Studentheim Leonardo","HouseNumber":20,"Street":"Rocklbrunnstrasse, 5020 Salzburg, Austria","Room Type":"Single room large, Single room small, Double sharing room","Rent/Month":"385 - 450","Distance from University of Salzburg ":"3.5 Km","Distance from Techno Z ":"4.9 Km"},
+      "geometry":{"type":"Point","coordinates":[13.062734, 47.812425]}},
+      {"type":"Feature","properties":{"S_no":12,"Name":"Techno Z studentheim","HouseNumber":30,"Street":"Schillerstrasse, 5020 Salzburg, Austria","Room Type":"Single room","Rent/Month":"From 430 ","Distance from University of Salzburg ":"4.2 Km","Distance from Techno Z ":"400 m"},
+      "geometry":{"type":"Point","coordinates":[ 13.040996789932251, 47.8226785946535]}},
+      {"type":"Feature","properties":{"S_no":13,"Name":"Haus Humboldt","HouseNumber":3,"Street":"Egger Leinz Gasse, 5020 Salzburg, Austria","Room Type":"Single room, Studio Apartment","Rent/Month":"300 - 370","Distance from University of Salzburg ":"3.9 Km","Distance from Techno Z ":"6.6 Km"},
+      "geometry":{"type":"Point","coordinates":[13.073075, 47.782254]}},
+      {"type":"Feature","properties":{"S_no":14,"Name":"Mozart Studentheim","HouseNumber":19,"Street":"Faberstrasse, 5020 Salzburg, Austria","Room Type":"Single room large, Single room small, Double sharing room","Rent/Month":"300 - 450","Distance from University of Salzburg ":"2.9 Km","Distance from Techno Z ":"1.9 Km"},
+      "geometry":{"type":"Point","coordinates":[13.043202, 47.808410]}},
+      {"type":"Feature","properties":{"S_no":15,"Name":"Haus Merian","HouseNumber":40,"Street":"Merianstrasse, 5020 Salzburg, Austria","Room Type":"Single room small, Single room large","Rent/Month":"245 - 250","Distance from University of Salzburg ":"3.5 Km","Distance from Techno Z ":"2.1 Km"},
+      "geometry":{"type":"Point","coordinates":[13.0249,47.4842]}},
+      {"type":"Feature","properties":{"S_no":16,"Name":"PMU dormitory","HouseNumber":11,"Street":"Gaswerkgasse, 5020 Salzburg, Austria","Room Type":"Single room","Rent/Month":"380 - 470","Distance from University of Salzburg ":"3.2 Km","Distance from Techno Z ":"2.1 Km"},
+      "geometry":{"type":"Point","coordinates":[13.032758, 47.810095]}},
+      {"type":"Feature","properties":{"S_no":17,"Name":"Studentheim Hohensalzburg","HouseNumber":9,"Street":"Bergstraße, 5020 Salzburg, Austria","Room Type":"Single room , double room","Rent/Month":"200 - 350","Distance from University of Salzburg ":"2.2 Km","Distance from Techno Z ":"4.3 Km"},
+      "geometry":{"type":"Point","coordinates":[13.045778, 47.803311]}},
+      {"type":"Feature","properties":{"S_no":18,"Name":"Akademikerhilfe Studentenheim - Schwarzes Rössl ","HouseNumber":6,"Street":"Priesterhausgasse, 5020 Salzburg, Austria","Room Type":"Single room, Double room","Rent/Month":"From 280","Distance from University of Salzburg ":"2 Km","Distance from Techno Z ":"2.5 Km"},
+      "geometry":{"type":"Point","coordinates":[13.045079, 47.802754]}},
+      {"type":"Feature","properties":{"S_no":19,"Name":"home4students Glockengasse -","HouseNumber":"4B","Street":"Glockengasse, 5020 Salzburg, Austria","Room Type":"Single room, Double room","Rent/Month":"270 - 390","Distance from University of Salzburg ":"4.3 Km","Distance from Techno Z ":"2.8 Km"},
+      "geometry":{"type":"Point","coordinates":[13.049325, 47.804214]}},
+      {"type":"Feature","properties":{"S_no":20,"Name":"Verein Dr Franz Rehrl Studentenheim -","HouseNumber":14,"Street":"Petersbrunnstraße, 5020 Salzburg, Austria","Room Type":"Single room","Rent/Month":"280 - 300","Distance from University of Salzburg ":"1.5 Km","Distance from Techno Z ":"4.2 Km"},
+      "geometry":{"type":"Point","coordinates":[13.051608, 47.794452 ]}}
+  ]
+  }
+      

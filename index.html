@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
     <link rel="stylesheet" href="css/leaflet-sidebar.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="Data/dormitory.geojson"></script>
+    <script src = "js/salz.js"></script>
 
 </head>
 <body>   
@@ -18,7 +20,7 @@
             <ul role="tablist">
                 <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
                 <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
-                <li><a href="https://github.com/Turbo87/sidebar-v2" role="tab" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/Taenja/Cartography" role="tab" target="_blank"><i class="fa fa-github"></i></a></li>
             </ul>
 
             <ul role="tablist">
@@ -36,18 +38,24 @@
 
                 <p>A responsive sidebar for mapping libraries like <a href="http://leafletjs.com/">Leaflet</a> or <a href="http://openlayers.org/">OpenLayers</a>.</p>
 
-                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p class="lorem">Dear Students, Willkommen in Salzburg!</p>
 
-                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p class="lorem">Looking for a place to stay ? The web map will help you find a place you can call home in this wonderful city</p>
 
-                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p class="lorem">Just click on the blue markers to get details about the dorm and book the one that suits your purpose. Apart from the studentheim website mentioned here you can also check out the website of oead housing 
+                    "<a href='" https://housing.oead.at/de/unterkuenfte/salzburg-de/haeuser-de?view=application&city=salzburg "'>"Visit housing.oead.at "</a>" to book a room in the dorm</p>
 
-                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p class="lorem">I hope you will find all the required information and have a wonderful time in the city. </p>
             </div>
 
             <div class="sidebar-pane" id="profile">
                 <h1 class="sidebar-header">Profile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-                Tanya Singh
+               
+                    
+                    
+                Tanya Singh  <br><br>  E+ EMCDE student at the University of Salzburg  <br><br> email: tanya.singh@stud.sbg.ac.at
+
+            
             </div>
 
             <div class="sidebar-pane" id="messages">
@@ -62,7 +70,10 @@
     <div id="map" class="sidebar-map"></div>
 
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/leaflet-sidebar.js"></script>
     <script src="js/main.js"></script>  
+   
+    
 </body>
 </html>
