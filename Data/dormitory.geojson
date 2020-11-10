@@ -190,19 +190,6 @@
         "geometry":{"type":"Point","coordinates":[13.043202, 47.808410]}},
         {"type":
         "Feature","properties":{
-          "S_no":15,
-          "Name":"Haus Merian",
-          "image": "Data/Image/hausmerein",
-          "HouseNumber":40,
-          "Street":"Merianstrasse, 5020 Salzburg, Austria",
-          "RoomType":"Single room small, Single room large",
-          "Rent":"245 - 250",
-          "DUni":"3.5 Km",
-          "DT":"2.1 Km",
-          "website":"https://www.wist-salzburg.com/de/haus-merian"},
-        "geometry":{"type":"Point","coordinates":[13.0249,47.4842]}},
-        {"type":
-        "Feature","properties":{
           "S_no":16,
           "Name":"PMU dormitory",
           "image": "Data/Image/PMU.jpg",

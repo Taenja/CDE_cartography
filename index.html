@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Title of the website-->
     <title>Student Accommodation in Salzburg</title>
-    
+    <!---Font style-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--Leflet stylesheet-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <!---stylesheet for sidebar-->
     <link rel="stylesheet" href="css/leaflet-sidebar.css" />
+    <!--main stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
+    <!---dormitory data-->
     <script src="Data/dormitory.geojson"></script>
+    <!--Salzburg city boundary Js file-->
     <script src = "js/salz.js"></script>
 
 </head>
+
 <body>   
     <div id="sidebar" class="sidebar collapsed">
         <!-- Nav tabs -->
@@ -50,12 +58,7 @@
 
             <div class="sidebar-pane" id="profile">
                 <h1 class="sidebar-header">Profile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-               
-                    
-                    
                 Tanya Singh  <br><br>  E+ EMCDE student at the University of Salzburg  <br><br> email: tanya.singh@stud.sbg.ac.at
-
-            
             </div>
 
             <div class="sidebar-pane" id="messages">
@@ -67,11 +70,16 @@
             </div>
         </div>
     </div>
-    <div id="map" class="sidebar-map"></div>
 
+    <!---Map ID-->
+    <div id="map" class="sidebar-map"></div>
+    <!--Leaflet stylesheet-->
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <!--Js query Library script of Javascript-->
     <script src="js/jquery-2.1.1.min.js"></script>
+    <!--sidebar Javascript-->
     <script src="js/leaflet-sidebar.js"></script>
+    <!--main Javascript-->
     <script src="js/main.js"></script>  
    
     

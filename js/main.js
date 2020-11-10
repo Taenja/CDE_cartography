@@ -1,6 +1,6 @@
 // Initializing the map
 var map = L.map('map');
-map.setView([47.8095, 13.0550], 13);
+map.setView([47.8095, 13.0550], 12);
 
 // Adding base layer
 var baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
@@ -22,15 +22,15 @@ var icon1 = L.icon({
 	iconSize: [30, 30]
 	});
 var department = L.marker([47.823629, 13.039131], {icon: icon1, clickable: true }).addTo(map);
-department.bindPopup("Interfaculty Department of Geoinformatics")
+department.bindPopup("Interfaculty Department of Geoinformatics");
 
+// Adding marker 2
 var icon2 = L.icon({
 	iconUrl: 'Data/image/university.png',
 	iconSize: [30, 30]
 	});
-
 var uni = L.marker([47.797362, 13.048683], {icon: icon2, clickable: true }).addTo(map);
-uni.bindPopup("University of Salzburg")
+uni.bindPopup("University of Salzburg");
 
 var dormIcon = {
 	radius : 8.5,
@@ -40,10 +40,11 @@ var dormIcon = {
     opacity: 1,
     fillOpacity: 0.9
 };
-
-// Adding GeoJSON data
-$.getJSON("data/dormitory.geojson", function(hoodData) {
-	L.geoJson(hoodData, {
+ 
+//Adding geoJSON data
+var points = $.getJSON("data/dormitory.geojson", function(hoodData) {
+	geojson = L.geoJson(hoodData, {
+		onEachFeature: onEachFeature,
 		pointToLayer: function(feature,latlng) {
 		  var marker = L.circleMarker(latlng, dormIcon);
 		  marker.bindPopup("<center><img src=" + feature.properties.image + " width='50%'></img></center>"+ '<br>'+'<b> Name: </b>' + feature.properties.Name + '<br>' + '<b> Address: </b>' + feature.properties.HouseNumber +
@@ -62,11 +63,50 @@ var cityStyle = {
 	"color": "#666699",
 	"fillColor": "#ffffff",
     "weight": 3,
-    "opacity": 0.70
+    "opacity": 1
 };
 L.geoJSON(salz, {
 	style: cityStyle
 	
 }).addTo(map);
 
+//function zoomToFeature(e)
+//{
+//  var latLngs = [e.target.getLatLng()];
+//  var markerBounds = L.latLngBounds(latLngs);
+//  map.fitBounds(markerBounds);
+//} 		
 
+function highlightFeature(e) {
+    var layer = e.target;
+    layer.setStyle({
+        weight: 5,
+        color: 'yellow',
+        fillOpacity: 0.7
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+
+function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+}
+
+function onEachFeature(feature, layer) {
+    layer.on({
+		mouseover: highlightFeature,
+		mouseout: resetHighlight
+    });
+}
+
+// Layer control
+var department = L.layerGroup([department]);
+var uni = L.layerGroup([uni]);
+
+var baseMaps = {
+    "Grayscale": baseLayer,
+    "Streets": baseLayer
+};
+L.control.layers(null, {"University": uni, "department":department}).addTo(map);
