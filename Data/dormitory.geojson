@@ -5,7 +5,7 @@
         "properties":{
         "S_no":1,
         "Name":"International College",
-        "image": "Data/Image/International Kolleg.jpg",
+        "image": "Data/Image/international_kolleg.jpg",
         "HouseNumber": 10, 
         "Street":"Billrothstrasse, 5020 Salzburg, Austria",
         "RoomType":"Single room , Single room in shared flat with 2/3 people, double share room",
@@ -19,7 +19,7 @@
         "properties":{
         "S_no":2,
         "Name":"Katharina Von Bora",
-        "image" : "Data/Image/KaVB",
+        "image" : "Data/Image/KaVB.jpg",
         "HouseNumber":10,
         "Street":"Dr. Altmannstrasse, 5020 Salzburg, Austria",
         "RoomType":"Single room, Double room, triple room",
@@ -113,7 +113,7 @@
         "Feature","properties":{
           "S_no":9,
           "Name":"Paris Lodron Studentheim",
-          "image": "Data/Image/Paris Lodron.jpg",
+          "image": "Data/Image/paris_lodron.jpg",
           "HouseNumber":36,
           "Street":"Schallmooser Hauptstrasse, 5020 Salzburg, Austria",
           "RoomType":"Single room large, Single room small, Double sharing room",
@@ -153,7 +153,7 @@
         "properties":{
           "S_no":12,
           "Name":"Techno Z studentheim",
-          "image": "Data/Image/Techno Z.jpg",
+          "image": "Data/Image/techno_z.jpg",
           "HouseNumber":30,
           "Street":"Schillerstrasse, 5020 Salzburg, Austria",
           "RoomType":"Single room",
@@ -166,7 +166,7 @@
         "Feature","properties":{
           "S_no":13,
           "Name":"Haus Humboldt",
-          "image": "Data/Image/haus humboldt.jpg",
+          "image": "Data/Image/haus_humboldt.jpg",
           "HouseNumber":3,
           "Street":"Egger Leinz Gasse, 5020 Salzburg, Austria",
           "RoomType":"Single room, Studio Apartment",
@@ -192,7 +192,7 @@
         "Feature","properties":{
           "S_no":16,
           "Name":"PMU dormitory",
-          "image": "Data/Image/PMU.jpg",
+          "image": "Data/Image/Pmu.jpg",
           "HouseNumber":11,
           "Street":"Gaswerkgasse, 5020 Salzburg, Austria",
           "RoomType":"Single room",

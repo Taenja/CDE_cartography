@@ -18,7 +18,7 @@ L.control.scale({position:'bottomright', imperial:false}).addTo(map);
 
 // Adding marker 1
 var icon1 = L.icon({
-	iconUrl: 'Data/image/department.png',
+	iconUrl: 'Data/Image/department.png',
 	iconSize: [30, 30]
 	});
 var department = L.marker([47.823629, 13.039131], {icon: icon1, clickable: true }).addTo(map);
@@ -26,7 +26,7 @@ department.bindPopup("Interfaculty Department of Geoinformatics");
 
 // Adding marker 2
 var icon2 = L.icon({
-	iconUrl: 'Data/image/university.png',
+	iconUrl: 'Data/Image/university.png',
 	iconSize: [30, 30]
 	});
 var uni = L.marker([47.797362, 13.048683], {icon: icon2, clickable: true }).addTo(map);
@@ -42,7 +42,7 @@ var dormIcon = {
 };
  
 //Adding geoJSON data
-var points = $.getJSON("data/dormitory.geojson", function(hoodData) {
+var points = $.getJSON("Data/dormitory.geojson", function(hoodData) {
 	geojson = L.geoJson(hoodData, {
 		onEachFeature: onEachFeature,
 		pointToLayer: function(feature,latlng) {
