@@ -10,14 +10,15 @@ var baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyag
 })
 baseLayer.addTo(map);
 
-var Esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
-})
-Esri.addTo(map);
+var OSM_France = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+	maxZoom: 20,
+	attribution: '&copy; Openstreetmap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+OSM_France.addTo(map);
 
 var base = {
-	"Open street map": baseLayer,
-	"Esri world street map": Esri
+	"Cart DB Voyager": baseLayer,
+	"OSM_france": OSM_France
 }
 
 // Adding side bar
