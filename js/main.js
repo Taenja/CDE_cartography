@@ -10,17 +10,6 @@ var baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyag
 })
 baseLayer.addTo(map);
 
-var OSM_France = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-	maxZoom: 20,
-	attribution: '&copy; Openstreetmap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-});
-OSM_France.addTo(map);
-
-var base = {
-	"Cart DB Voyager": baseLayer,
-	"OSM_france": OSM_France
-}
-
 // Adding side bar
 var sidebar = L.control.sidebar('sidebar').addTo(map);
 
@@ -121,4 +110,4 @@ var baseMaps = {
 	"Streets": baseLayer,
 	"Grayscale": baseLayer
 };
-L.control.layers(base, {"University": uni, "department":department}).addTo(map);
+L.control.layers(null, {"University": uni, "department":department}).addTo(map);
