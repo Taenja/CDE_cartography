@@ -117,7 +117,8 @@ var department = L.layerGroup([department]);
 var uni = L.layerGroup([uni]);
 
 var baseMaps = {
-    "Grayscale": baseLayer,
-    "Streets": baseLayer
+    
+	"Streets": baseLayer,
+	"Grayscale": baseLayer
 };
 L.control.layers(base, {"University": uni, "department":department}).addTo(map);
