@@ -10,6 +10,16 @@ var baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyag
 })
 baseLayer.addTo(map);
 
+var Esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+})
+Esri.addTo(map);
+
+var base = {
+	"Open street map": baseLayer,
+	"Esri world street map": Esri
+}
+
 // Adding side bar
 var sidebar = L.control.sidebar('sidebar').addTo(map);
 
@@ -109,4 +119,4 @@ var baseMaps = {
     "Grayscale": baseLayer,
     "Streets": baseLayer
 };
-L.control.layers(null, {"University": uni, "department":department}).addTo(map);
+L.control.layers(base, {"University": uni, "department":department}).addTo(map);
