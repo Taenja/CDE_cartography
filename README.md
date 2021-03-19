@@ -1,3 +1,3 @@
 # webMap
-WebMap about student accomodation in Salzburg
+WebMap for student accomodation in Salzburg :
 https://taenja.github.io/Cartography/
